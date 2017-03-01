@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+CS 1520 - Project 1
+Hannah Tarzian
+-->
+
+<html>
+	<head>
+		<title>MY CATS!!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">Hannah Tarzian</a></h1>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li><a href="elements.html">Connect With Me</a></li>
+							<li><a href="cats.html">My Cats!!!</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+		<section id="wrapper">
+			
+			<section id="two">
+				<div class="inner">
+					<div id="stage4">
+						<a href="#"><img src="images/pic01.jpg" width="300"></a>
+						<a href="2.jpg"><img src="images/boots3.jpg" width="300"></a>
+						<a href="3.jpg"><img src="images/pic03.jpg" width="300"></a>
+						<a href="4.jpg"><img src="images/me.jpg" width="300"></a>
+						<a href="5.jpg"><img src="images/pic05.jpg" width="300"></a>
+					</div>
+				</div>
+			</section>
+		</section>
+		
+	
+
+		
+		<style type="text/css">
+
+		  #stage4 {
+			margin: 1em auto;
+			width: 382px;
+			height: 292px;
+		  }
+		  #stage4 a {
+			position: absolute;
+		  }
+		  #stage4 a img {
+			padding: 10px;
+			border: 1px solid #ccc;
+			background: #fff;
+		  }
+
+		  #stage4 a:nth-of-type(1) {
+			-webkit-animation-name: fader;
+			-webkit-animation-delay: 4s;
+			-webkit-animation-duration: 1s;
+			-moz-animation-name: fader;
+			-moz-animation-delay: 4s;
+			-moz-animation-duration: 1s;
+			-ms-animation-name: fader;
+			-ms-animation-delay: 4s;
+			-ms-animation-duration: 1s;
+			z-index: 20;
+		  }
+		  #stage4 a:nth-of-type(2) { z-index: 10; }
+		  #stage4 a:nth-of-type(n+3) { display: none; }
+
+		  @-webkit-keyframes fader {
+			from { opacity: 1.0; }
+			to   { opacity: 0.0; }
+		  }
+		  @-moz-keyframes fader {
+			from { opacity: 1.0; }
+			to   { opacity: 0.0; }
+		  }
+		  @-ms-keyframes fader {
+			from { opacity: 1.0; }
+			to   { opacity: 0.0; }
+		  }
+
+		</style>
+			
+		<script type="text/javascript">
+
+		  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+		  // Please acknowledge use of this code by including this header.
+
+		  document.addEventListener("DOMContentLoaded", function() {
+
+			var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+
+			var stage = document.getElementById("stage4");
+			var arr = stage.getElementsByTagName("a");
+			for(var i=0; i < arr.length; i++) {
+			  arr[i].addEventListener("webkitAnimationEnd", fadeComplete, false);
+			  arr[i].addEventListener("animationend", fadeComplete, false);
+			  arr[i].addEventListener("MSAnimationEnd", fadeComplete, false);
+			}
+
+		  }, false);
+
+		</script>
+		
+		
+	</body>
+</html>
