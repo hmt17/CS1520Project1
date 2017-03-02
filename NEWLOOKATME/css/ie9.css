@@ -1,14 +1,11 @@
 /*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+CS 1520 - Project 1
+Hannah Tarzian
 */
 
-/* Basic */
-
 	body {
-		background-color: #2e3141;
-		background-image: url("../../images/bg.jpg");
+		background-color: #aaa;
+		background-image: url("../../images/code.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;

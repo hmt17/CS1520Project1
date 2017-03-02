@@ -9,7 +9,7 @@ Hannah Tarzian
 		<title>MY CATS!!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -34,20 +34,26 @@ Hannah Tarzian
 						<a href="#" class="close">Close</a>
 					</div>
 				</nav>
-		<section id="wrapper">
-			
-			<section id="two">
-				<div class="inner">
-					<div id="stage4">
-						<a href="#"><img src="images/pic01.jpg" width="300"></a>
-						<a href="2.jpg"><img src="images/boots3.jpg" width="300"></a>
-						<a href="3.jpg"><img src="images/pic03.jpg" width="300"></a>
-						<a href="4.jpg"><img src="images/me.jpg" width="300"></a>
-						<a href="5.jpg"><img src="images/pic05.jpg" width="300"></a>
-					</div>
-				</div>
-			</section>
-		</section>
+				<!-- Wrapper ID-->
+				<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>These are my cats! I love them very very dearly</h2>
+							</div>
+						</header>
+											
+					<section id="two">
+						<div class="inner">
+							<div id="stage4">
+								<a href="#"><img src="images/a.jpg" width="600"></a>
+								<a href="2.jpg"><img src="images/boots3.jpg" width="600"></a>
+								<a href="3.jpg"><img src="images/b.jpg" width="600"></a>
+								<a href="4.jpg"><img src="images/c.jpg" width="600"></a>
+								<a href="5.jpg"><img src="images/e.jpg" width="600"></a>
+							</div>
+						</div>
+					</section>
+				</section>
 		
 	
 
@@ -56,8 +62,13 @@ Hannah Tarzian
 
 		  #stage4 {
 			margin: 1em auto;
-			width: 382px;
-			height: 292px;
+			width: 600px;
+			height: 400px;
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
 		  }
 		  #stage4 a {
 			position: absolute;
@@ -118,7 +129,12 @@ Hannah Tarzian
 		  }, false);
 
 		</script>
-		
+		<!-- JS Scripts used-->
+			<script src="js/skel.min.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
 		
 	</body>
 </html>
